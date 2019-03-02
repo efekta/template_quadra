@@ -502,7 +502,7 @@ $(window).on('load', function() {
         $('body').scrollspy({ target: "menus", offset: 250 });
 
     //Sticky Navigation Scripts
-        $("#navigation.sticky").sticky({topSpacing:0});
+        $(".top-navigation").sticky({topSpacing:0});
     //Make Dropdown
         $('#navigation .dropdown-toggle').each(function() {
             $(this).on('mouseenter', function(){

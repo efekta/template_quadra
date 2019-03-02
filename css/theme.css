@@ -1740,9 +1740,30 @@
 	#navigation.modern .columns .logo{ width: auto; height: auto; float: left; top:50%; position: relative; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 	#navigation.modern .columns .logo a{ display: block; }
 	#navigation.modern .columns .logo img{ width: auto; height: auto; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; transition: all 0.25s; }
-	#navigation.modern .columns .nav-menu{ float: right; height: 100%; position: relative; }
-	#navigation.modern .columns ul{ width: auto; height: 100%; position: relative; }
-	#navigation.modern .columns ul li{ float: left; padding:0; height: 100%; position: relative; }
+	#navigation.modern .columns .nav-menu{height: 100%; position: relative; }
+	#navigation.modern .columns ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: auto;
+	height: 100%; 
+	position: relative;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+ }
+	#navigation.modern .columns ul li{
+		width: 20%;
+    	text-align: center;
+		padding:0;
+		height: 100%;
+		position: relative;
+	 }
 	#navigation.modern .columns ul li a,
 	#navigation.modern .columns ul li button{ padding:0 16px; font-size: 12px; font-weight: 700; font-family: inherit; display: block; position: relative; background: transparent; height: 100%; line-height: inherit; border: none; z-index: 1; overflow: hidden; outline: none; -webkit-transition: color 0.2s, opacity 0.2s, background 0.2s; -moz-transition: color 0.2s, opacity 0.2s, background 0.2s; transition: color 0.2s, opacity 0.2s, background 0.2s;}
 	#navigation.modern.text-lg .columns ul li a{ font-size: 13px; }
@@ -1973,7 +1994,7 @@
 			#mobile-navigation .nav-el .search-form-trigger{ position: absolute; background-color:transparent; left:0; top:10px; width: 45px; height: 45px; line-height: 45px; text-align: center; font-size: 15px; color:#bbb; cursor: pointer; }
 			#mobile-navigation .mb-close:before{ content:"\f00d"; font-family: 'FONTAWESOME';}
 			/* Navigation Nav */
-			#mobile-navigation .nav{ margin-top:27%; color:white; font-weight: 500; background-color:inherit; }
+			#mobile-navigation .nav{ margin-top:97px; color:white; font-weight: 500; background-color:inherit; }
 			#mobile-navigation .nav li{ border-top:1px solid rgba(255,255,255,0.03); }
 			#mobile-navigation .nav li a{ font-size:11px; padding:0 15px !important; margin:0 !important; display: block; line-height: 39px; position: relative; color:#eee; font-weight: 700;}
 			#mobile-navigation .nav .dropdown-menu li a{font-size:13px;}
@@ -3216,3 +3237,37 @@
 	.css3-color:hover{color:#3a88d0 !important;}
 	.pagelines-color:hover{color:#4f98df !important;}
 	.gittip-color:hover{color:#7c6035 !important;}
+
+	.white_title_wrap {
+		text-align: left;
+		width: 70%;
+	}
+	.white_title_wrap h1 {
+		margin-bottom: 15px;
+	}
+	.white_title_wrap span {
+		display: block;
+		margin-bottom: 15px;
+		font-weight: 700;
+		font-size: 26px;
+	}
+	.head-phone {
+		font-size: 32px;
+	}
+	#navigation.modern {
+		position: static;
+	}
+	.top-navigation {
+		left: 0;
+		right: 0;
+	}
+@media screen and (max-width: 920px) {
+
+}
+@media screen and (max-width: 768px) { 
+	.white_title_wrap {
+	    text-align: left;
+	    width: 100%;
+	}
+
+}
