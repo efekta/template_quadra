@@ -3261,8 +3261,16 @@
 		left: 0;
 		right: 0;
 	}
-@media screen and (max-width: 920px) {
-
+	.flex-v-center {
+		align-items: center;
+	}
+@media screen and (max-width: 1024px) {
+	.mob-t-left {
+		text-align: left;
+	}
+	.mob-t-right {
+		text-align: right;
+	}
 }
 @media screen and (max-width: 768px) { 
 	.white_title_wrap {
