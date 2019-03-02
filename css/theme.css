@@ -103,7 +103,7 @@
 	.lh-xl{ line-height: 240%; }
 		@media only screen and (max-width: 768px){ .lh-sm-mobile{ line-height: normal !important; }}
 	.fstyle-normal{ font-style: normal; }
-	.underline,.underline-hover:hover,.underline-hover-links a:hover,.underline-hover-all:hover *{ text-decoration: underline !important; }
+	.underline,.underline-hover:hover,.underline-hover-links a:hover,.underline-hover-all:hover *{  }
 	.overline,.overline-hover:hover,.overline-hover-links a:hover,.overline-hover-all:hover *{ text-decoration: line-through !important; }
 	.underline-dashed{ border-bottom:1px dashed; word-spacing: -1px;}
 	.text-background{ -webkit-background-clip: text !important; -webkit-text-fill-color: transparent; background-size:cover; background-position: center; }
