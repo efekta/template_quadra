@@ -3299,6 +3299,12 @@
 	.title {
 		font-size: 32px;
 	}
+/*	.lg-actions .lg-next, .lg-actions .lg-prev {
+		transform: translateY(-50%);
+	}*/
+/*	.lg-outer .lg-image {
+		vertical-align: top;	
+	}*/
 @media screen and (max-width: 1120px) {
 	.mob-head-grid {
 		flex: 0 0 50%;
@@ -3314,7 +3320,10 @@
 	.contacts__link {
 		font-size: 16px;
 	}
-
+	.sm-py {
+	    padding-top: 20px !important;
+	    padding-bottom: 20px !important;
+	}
 }
 @media screen and (max-width: 767px) { 
 	.white_title_wrap {
