@@ -2894,7 +2894,7 @@
 /* Footer styles
 /* ================================================== */
 	.classic_footer{ background-color:#171717; color:#8a8a8a; line-height: 170%; font-size: 14px; -webkit-transform: translateZ(0px); transform: translateZ(0px); }
-	.classic_footer .footer-body{ padding:60px 0 50px; }
+	.classic_footer .footer-body{ padding :50px 0; }
 	.classic_footer .footer-body .row{ width: 100%; }
 		@media only screen and (max-width: 1171px){
 			.classic_footer{ padding-left:15px; padding-right: 15px; }
@@ -3240,7 +3240,7 @@
 
 	.white_title_wrap {
 		text-align: left;
-		width: 70%;
+		width: 60%;
 	}
 	.white_title_wrap h1 {
 		margin-bottom: 15px;
@@ -3267,12 +3267,37 @@
 	.contacts-box {
 		margin-top: 20px;
 	}
+	.contacts__link {
+		font-size: 20px;
+	}
 	h6 {
 		margin-bottom: 20px;
 	}
 	#my_map {
 	    width: 100%;
 	    height: 300px;
+	}
+	.footer-wrap {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.footer-box {
+		width: 49%;
+	}
+	.footer-inline-box {
+		display: inline-block;
+	}
+	.title {
+		font-size: 32px;
 	}
 @media screen and (max-width: 1120px) {
 	.mob-head-grid {
@@ -3286,12 +3311,21 @@
 	.head-phone {
 	    font-size: 26px;
 	}
+	.contacts__link {
+		font-size: 16px;
+	}
 
 }
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767px) { 
 	.white_title_wrap {
 	    text-align: left;
 	    width: 100%;
+	}
+	#my_map {
+		margin-bottom: 20px;	
+	}
+	.t-c-mob {
+		text-align: center;	
 	}
 
 }
