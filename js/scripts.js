@@ -3,9 +3,9 @@ $(window).on('load', function() {
 
     'use strict';
 
-    //*********************************************
-    //  MOBILE & BROWSER DETECTERS
-    //*********************************************
+    /*================================
+     MOBILE & BROWSER DETECTERS
+    =================================*/
 
         // Control of the functions exists
         $.fn.exists = function () { return this.length > 0; };
@@ -1571,3 +1571,24 @@ $(window).on('load', function() {
 
             });
          }
+
+
+;$(document).ready(function() {
+/*================================
+Карта
+=================================*/
+        ymaps.ready(function(){
+
+        var myMap = new ymaps.Map("my_map", {
+            center: [55.515171, 37.568758],
+            zoom: 17
+        });
+        var myPlacemark = new ymaps.Placemark([55.515171, 37.568758], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'icons/placeholder@2x.png',
+        iconImageSize: [18, 24]
+    });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable(['scrollZoom']);
+    });
+});

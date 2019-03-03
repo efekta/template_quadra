@@ -14,7 +14,6 @@
 	<link rel="icon" type="image/png" href="images/favicon.png" />
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
-
 	<!-- CSS Files -->
     <link rel="stylesheet" href="css/plugins.css?v=2.4"/>
     <!-- Main Styles -->
@@ -26,6 +25,8 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 
 <!-- BODY START -->
@@ -134,38 +135,51 @@
         <div class="container footer-body">
             <div class="row clearfix">
                 <!-- Column -->
-                <div class="col-md-4 col-sm-6 col-xs-12 sm-mb-mobile">
-                    <h6 class="uppercase white extrabold sm-mb">recent Comments</h6>
-                    <!-- Clients Slider one - You can find details in footer-client-comments.html file, #post1 div -->
-                    <!-- Sub Title -->
-                    <h6 class="xxs-mt bold gray8">ADD YOUR COMMENT</h6>
-                    <p class="mini-mt gray8"><a href="http://goldeyestheme.com/envato/quadra/wishbox.html" target="_blank" class="mini-mt underline-hover gray6-hover gray7">Drop us your comment!</a> All images are placeholders.</p>
+                <div class="col-md-6 col-sm-6 col-xs-12 sm-mb-mobile">
+                    <div class="my_map" id="my_map" style=""></div>
                 </div>
                 <!-- End Column -->
-                <!-- Column -->
-                <div class="col-md-4 col-sm-6 col-xs-12 sm-mb-mobile">
-                    <!-- Title -->
-                    <h6 class="uppercase white extrabold">Quadra Exclusive Theme</h6>
-                    <h6 class="sm-mt bold gray8">ABOUT US</h6>
-                    <p class="mini-mt">It is a long established fact that a read page when looking at its layout. </p>
-                    <h6 class="xs-mt bold gray8"><i class="fa fa-map-marker mini-mr"></i>OUR ADDRESS</h6>
-                    <p class="mini-mt">PO Box 16122 Collins Street West <br class="hidden-xs"> Victoria 8007 Australia</p>
-                    <!-- Google Map -->
-                    <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937586!2d2.2922926156743895!3d48.858370079287475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEyfel+Kulesi!5e0!3m2!1str!2s!4v1491905379246" data-iframe="true" class="lightbox underline-hover colored-hover">
-                        Find us on Google Map
-                    </a>
-                    <h6 class="xs-mt bold gray8"><i class="fa fa-envelope mini-mr"></i>CONTACT US</h6>
-                    <p class="mini-mt">Pbx: <a href="tel:+0123456790" class="underline-hover colored-hover">+0123456789</a></p>
-                    <a href="mailto:goldeyestheme@gmail.com" class="underline-hover colored-hover">example@example.com</a>
+                <div class="col-md-6 col-sm-6 col-xs-12 sm-mb-mobile">
+                    <div class="row clearfix">
+                        <!-- Column -->
+                        <div class="col-md-6 col-sm-6 col-xs-12 sm-mb-mobile">
+                            <!-- Title -->
+                            <h6 class="uppercase white extrabold">Часы работы</h6>
+                            <p class="mini-mt">Пн-Сб:
+                                <span>с 9:00 - 19:00</span>
+                            </p>
+                            <p class="mini-mt">Вс:
+                                <span>Выходной</span>
+                            </p>
+                        </div>
+                        <!-- Column -->
+                        <div class="col-md-6 col-sm-6 col-xs-12 all-block-links sm-mb-mobile">
+                            <h6 class="uppercase white extrabold">Наш адрес</h6>
+                            <p>г. Ростов-на-Дону, ул. Садовая 9</p>
+                        </div>
+                        <!-- End Column -->
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-6 col-sm-6 col-xs-12 sm-mb-mobile">
+                            <div class="contacts-box">
+                                <a href="tel:+79289999999" class="underline-hover colored-hover">
+                                    <i class="fa fa-phone mini-mr"></i>
+                                    <span>8 928 999 99 99</span>
+                                </a>
+                            </div>
+                        </div>
+                         <div class="col-md-6 col-sm-6 col-xs-12 all-block-links sm-mb-mobile">
+                            <div class="contacts-box">
+                                <a href="mailto:goldeyestheme@gmail.com" class="underline-hover colored-hover">
+                                <i class="fa fa-envelope mini-mr"></i>
+                                <span>example@example.com</span>
+                                </a>
+                            </div>
+                         </div>
+                    </div>
                 </div>
-                <!-- Column -->
-                <div class="col-md-4 col-sm-6 col-xs-12 all-block-links sm-mb-mobile">
-                    <h6 class="uppercase white extrabold sm-mb">Latest News</h6>
-                    <!-- You can edit footer-news.html file in js/ajax folder. Will be changed on all website -->
-                    <div data-ajax-load="js/ajax/footer-news.html"><i class="fa fa-refresh fa-2x fa-spin"></i></div> 
-                </div>
-                <!-- End Column -->
             </div>
+
         </div>
         <!-- End Container -->
         <!-- Footer Bottom -->
@@ -263,11 +277,14 @@
         <span>Thank You ! Your email has been delivered.</span>
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+    </script>
 	<!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js?v=2.3"></script>
+    <script src="js/jquery.min.js?v=2.3"></script>
     <!-- MAIN SCRIPTS - Classic scripts for all theme -->
-    <script type="text/javascript" src="js/scripts.js?v=2.3"></script>
+
+    <script src="js/scripts.js?v=2.3"></script>
     <!-- END JS FILES -->
 
 </body>
