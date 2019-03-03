@@ -3264,13 +3264,19 @@
 	.flex-v-center {
 		align-items: center;
 	}
-@media screen and (max-width: 1024px) {
-	.mob-t-left {
+@media screen and (max-width: 1120px) {
+	.mob-head-grid {
+		flex: 0 0 50%;
+    	max-width: 50%;
+	}
+	.mob-head-t-left {
 		text-align: left;
 	}
-	.mob-t-right {
-		text-align: right;
+
+	.head-phone {
+	    font-size: 26px;
 	}
+
 }
 @media screen and (max-width: 768px) { 
 	.white_title_wrap {
@@ -3278,4 +3284,14 @@
 	    width: 100%;
 	}
 
+}
+@media screen and (max-width: 560px) {
+	.mob-head-grid {
+		flex: 0 0 100%;
+    	max-width: 100%;
+    	text-align: center;
+	}
+	.head-phone {
+	    font-size: 22px;
+	}
 }
