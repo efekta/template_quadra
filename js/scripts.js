@@ -1591,7 +1591,34 @@ $(window).on('load', function() {
         myMap.geoObjects.add(myPlacemark);
         myMap.behaviors.disable(['scrollZoom']);
     });
-
+$('#portfolio-items').cubeportfolio({
+            filters: '#filter',
+            layoutMode: 'grid',
+            mediaQueries: [{
+                width: 1000,
+                cols: 5,
+            }, {
+                width: 800,
+                cols: 3,
+            }, {
+                width: 600,
+                cols: 2,
+            }, {
+                width: 480,
+                cols: 1,
+                options: {
+                    caption: '',
+                }
+            }],
+            defaultFilter: '*',
+            animationType: 'quicksand',
+            gapHorizontal: 15,
+            gapVertical: 15,
+            gridAdjustment: 'responsive',
+            caption: 'fadeIn',
+            displayType: 'sequentially',
+            displayTypeSpeed: 50,
+        });
         // init cubeportfolio
         $('#gallery-items').cubeportfolio({
             filters: '#gallery-filter1, #gallery-filter2',
