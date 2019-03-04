@@ -3306,6 +3306,7 @@
 	    display: flex;
 	    justify-content: space-between;
 	    flex-wrap: wrap;
+	    margin-top: 20px;
 	}
 	.fancy-item {
 	    width: 19%;
@@ -3322,6 +3323,29 @@
 	}
 	body.compensate-for-scrollbar {
 	    overflow: visible;
+	}
+	#classic-tabs {
+		position: relative;
+	}
+	.nav {
+	    display: block;
+	    position: absolute;
+	    top: -42px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    background: #fff;
+	}
+	.nav-tabs .nav-link, .nav-tabs {
+		border: none;
+	}
+	.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+		border: none;
+	}
+	.tab-content .bold-title {
+		margin-bottom: 20px;
+	}
+	.tab-content p {
+		font-size: 18px;
 	}
 /*	.lg-actions .lg-next, .lg-actions .lg-prev {
 		transform: translateY(-50%);
