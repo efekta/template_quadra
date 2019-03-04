@@ -3341,19 +3341,25 @@
 	.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
 		border: none;
 	}
+
 	.tab-content h2 {
 		margin-bottom: 20px;
-
 	}
 	.tab-content p {
 		font-size: 18px;
 	}
-/*	.lg-actions .lg-next, .lg-actions .lg-prev {
-		transform: translateY(-50%);
-	}*/
-/*	.lg-outer .lg-image {
-		vertical-align: top;	
-	}*/
+	.tabs-sm-py {
+		padding-bottom: 80px !important;
+	}
+	.modern-tabs>li:last-child a, .modern-tabs>div:last-child a {
+    	border-right: none;
+	}
+	.modern-tabs>li:nth-of-type(1) a, .modern-tabs.vertical-tabs>li>a {
+		border-left: none;
+	}
+
+
+
 @media screen and (max-width: 1120px) and (min-width: 320px) {
 	.mob-head-grid {
 		flex: 0 0 50%;

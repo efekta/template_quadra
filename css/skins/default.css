@@ -2,11 +2,11 @@
 
 	/* Colored */
 	.colored, .colored-hover:hover{ color:#3e5ee7 !important; }
-	.bg-colored, .bg-colored-hover:hover{background-color:#3e5ee7 !important; }
-	.border-colored, .border-colored-hover:hover{ border-color:#3e5ee7 !important; }
+	.bg-colored, .bg-colored-hover:hover{background-color:#17a2b8 !important; }
+	.border-colored, .border-colored-hover:hover{ border-color:#17a2b8 !important; }
 
 	/* Colored1 */
-	.colored1, .colored1-hover:hover{ color:#d82950 !important; }
+	.colored1, .colored1-hover:hover{ color:#17a2b8 !important; }
 	.bg-colored1, .bg-colored1-hover:hover{ background-color:#d82950 !important; }
 	.border-colored1, .border-colored1-hover:hover{ border-color:#d82950 !important; }
 
