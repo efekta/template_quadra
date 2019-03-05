@@ -2,11 +2,11 @@
 
 	/* Colored */
 	.colored, .colored-hover:hover{ color:#3e5ee7 !important; }
-	.bg-colored, .bg-colored-hover:hover{background-color:#17a2b8 !important; }
-	.border-colored, .border-colored-hover:hover{ border-color:#17a2b8 !important; }
+	.bg-colored, .bg-colored-hover:hover{background-color:#3e5ee7 !important; }
+	.border-colored, .border-colored-hover:hover{ border-color:#3e5ee7 !important; }
 
 	/* Colored1 */
-	.colored1, .colored1-hover:hover{ color:#17a2b8 !important; }
+	.colored1, .colored1-hover:hover{ color:#d82950 !important; }
 	.bg-colored1, .bg-colored1-hover:hover{ background-color:#d82950 !important; }
 	.border-colored1, .border-colored1-hover:hover{ border-color:#d82950 !important; }
 
@@ -39,12 +39,19 @@
 		background: linear-gradient(45deg,  #f2b03d 0%,#e53838 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
 
+
 	.bg-soft-gradient2:before,
 	.bg-gradient2{
-		background: #ed900a;
+/*		background: #ed900a;
 		background: -moz-linear-gradient(15deg, #ed900a 0%, #a63fb5 50%, #601ddd 100%);
 		background: -webkit-linear-gradient(45deg, #ed900a 0%,#a63fb5 50%,#601ddd 100%);
-		background: linear-gradient(45deg, #ed900a 0%,#a63fb5 50%,#601ddd 100%);
+		background: linear-gradient(45deg, #ed900a 0%,#a63fb5 50%,#601ddd 100%);*/
+
+		    /*opacity: 0.9;*/
+	    background: #5642d1;
+	    background: -moz-linear-gradient(45deg, #5642d1 0%, #5bc2ed 100%);
+	    background: -webkit-linear-gradient(45deg, #5642d1 0%,#5bc2ed 100%);
+	    background: linear-gradient(to 45deg, #5642d1 0%,#5bc2ed 100%);
 	}
 
 	.bg-soft-gradient3:before,
