@@ -3221,6 +3221,7 @@
 	letter-spacing: normal;
 }
 p {
+/*	color: #333;*/
 	font-size: 16px !important;
 }
 .main-menu__list {
