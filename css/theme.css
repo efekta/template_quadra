@@ -3216,7 +3216,12 @@
 	.css3-color:hover{color:#3a88d0 !important;}
 	.pagelines-color:hover{color:#4f98df !important;}
 	.gittip-color:hover{color:#7c6035 !important;}
-
+.modal a {
+	color: #3e5ee7;
+}
+.modal .modal-details {
+    padding: 40px;
+}
 .bold-title {
 	letter-spacing: normal;
 }

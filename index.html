@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/plugins.css?v=2.4"/>
+    <link rel="stylesheet" href="css/components/ion.rangeSlider.css">
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/theme.css?v=2.4"/>
@@ -1036,45 +1037,47 @@
                     <!-- Contact Form -->
                     <form id="contact_form" name="contact_form" method="post" action="php/mail.php">
                         <!-- Half Inputs -->
-                        <div class="half clearfix">
-                            <div>
-                                <!-- Name -->
-                                <label for="name">Name:*</label>
-                                <input type="text" name="name" id="name" required class="classic_form radius bg-gray">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 xs-my">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- Name -->
+                                        <label for="name">Ваше имя:*</label>
+                                        <input type="text" name="name" id="name" required class="classic_form radius bg-gray">
+                                    </div>
+                                    <div class="col-12">
+                                        <!-- Phone -->
+                                        <label for="tel">Телефон:*</label>
+                                        <input type="tel" name="tel" id="tel" required class="classic_form radius bg-gray">
+                                    </div>
+                                    <div class="col-12">
+                                        <!-- Email -->
+                                        <label for="email">E-Mail:*</label>
+                                        <input type="email" name="email" id="email" required class="classic_form radius bg-gray">
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <!-- Email -->
-                                <label for="email">E-Mail:*</label>
-                                <input type="email" name="email" id="email" required class="classic_form radius bg-gray">
+                            <div class="col-md-6 col-xs-12 xs-my">
+                                <div class="xs-py xs-pl xs-pr bs-sm">
+                                    <input id="range_01">
+                                </div>
+                                <div class="xs-py xs-pl xs-pr bs-sm">
+                                    <input id="range_012">
+                                </div>
+                                <div class="xs-py xs-pl xs-pr bs-sm">
+                                    <input id="range_013">
+                                </div>
                             </div>
                         </div>
-                        <!-- Subject -->
-                        <label for="subject">Subject:</label>
-                        <select name="subject" form="contact_form" required class="classic_form radius bg-gray">
-                            <option value="">Select a Subject</option>
-                            <option value="Developer">Option 1</option>
-                            <option value="Designer">Option 2</option>
-                            <option value="Photographer">Option 3</option>
-                        </select>
-
-                        <!-- Radios -->
                         <div>
-                            <div class="classic_checkbox radio">
-                                <input type="radio" name="radioSubject" id="radioOne" value="radioOne" checked> <label for="radioOne">Radio One</label>
-                            </div>
-                            <div class="classic_checkbox radio">
-                                <input type="radio" name="radioSubject" id="radioTwo" value="radioTwo"> <label for="radioTwo">Radio Two</label>
-                            </div>
-                            <div class="classic_checkbox radio">
-                                <input type="radio" name="radioSubject" id="radioThree" value="radioThree"> <label for="radioThree">Radio Three</label>
-                            </div>
+                            <p class="xs-mb">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+                            <p class="xs-mb">Отправляя форму, вы соглашаетесь с 
+                                <a href="#">политикой конфиденциальности</a>
+                                сайта
+                            </p>
                         </div>
-                        <!-- Message -->
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message" class="classic_form radius bg-gray"></textarea>
                         <!-- Half Inputs -->
-                        <div class="half clearfix">
-                            <input type="text" name="verify" id="verify" required class="classic_form radius bg-gray">
+                        <div class="t-center">
                             <!-- Send Button -->
                             <button type="submit" id="submit" class="bold white font-16 bg-colored xl-btn radius-lg qdr-hover-6 bs-lg-hover slow">Получить проект</button>
                             <!-- End Send Button -->
@@ -1094,9 +1097,11 @@
     <!-- jQuery -->
     <script src="js/jquery.min.js?v=2.3"></script>
     <!-- MAIN SCRIPTS - Classic scripts for all theme -->
+    <script src="js/components/ion.rangeSlider.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.js"></script>
     <script src="js/scripts.js?v=2.3"></script>
     <!-- END JS FILES -->
+
 </body>
 <!-- Body End -->
 </html>
