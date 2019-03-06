@@ -3222,6 +3222,10 @@
 	    margin: 1.75rem auto;
 	}
 }*/
+.modal-tabs > .modal-tabs-nav {
+	position: static;
+	transform: translate(0,0);
+}
 .modal a {
 	color: #3e5ee7;
 }
