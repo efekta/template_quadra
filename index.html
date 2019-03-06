@@ -1008,69 +1008,99 @@
     <!-- Modal а -->
     <div id="modal-a" class="modal middle-modal fade light" tabindex="-1" role="dialog">
         <!-- Container -->
-        <div class="modal-dialog modal-md bg-white radius o-hidden" role="document">
+        <div class="modal-dialog modal-lg bg-white radius o-hidden" role="document">
             <!-- Modal Content -->
             <div class="modal-content">
                 <!-- Close Button for modal -->
                 <div class="close fa fa-close" data-dismiss="modal"></div>
                 <!-- Details -->
-                <div class="modal-details">
+                <div class="modal-details col-md-12 offset-md-12 col-12">
                     <header class="head-modal">
-                        <h3 class="no-pm">Вызвать замерщика</h3>
-                        <div class="modal-tabs modern-tabs-container t-center border-gray2 no-border">
+                        <h3 class="xxs-mb">Вызвать замерщика</h3>
+                        <div class="modal-tabs modern-tabs-container t-center border-gray2 no-border xxs-mb">
                             <ul class="nav nav-tabs modern-tabs modal-tabs-nav font-12 radius uppercase bold" role="tablist">
-                                <li role="presentation"><a href="#modal_tab1" aria-selected="true" aria-controls="modal_tab1" role="tab" data-toggle="tab" class="bg-colored border-colored white show active">Tab 1</a></li>
-                                <li role="presentation"><a href="#modal_tab2" aria-selected="false" aria-controls="modal_tab2" role="tab" data-toggle="tab" class="bg-colored border-colored white">Tab 2</a></li>
+                                <li role="presentation">
+                                    <a href="#modal_tab1" aria-selected="true" aria-controls="modal_tab1" role="tab" data-toggle="tab" class="bg-colored border-colored white show active">
+                                        По телефону
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#modal_tab2" aria-selected="false" aria-controls="modal_tab2" role="tab" data-toggle="tab" class="bg-colored border-colored white">
+                                        По E-mail
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </header>
-                        <div class="tab-content slide-effect t-left">
-                            <!-- Tab -->
-                            <div id="modal_tab1" role="tabpanel" class="tab-pane active">
-                                <div class="tab-container">
-                                    <!-- Contact Form -->
-                                    <form id="login_form" name="login_form" method="post" action="">
-                                        <!-- Name -->
-                                        <input type="text" name="name" id="name" required placeholder="Username" class="classic_form radius bg-gray">
-                                        <!-- Email -->
-                                        <input type="password" name="password" id="password" required placeholder="Password" class="classic_form radius bg-gray">
-                                        <!-- Checkboxes -->
-                                        <div class="t-left">
-                                            <div class="classic_checkbox">
-                                                <input type="checkbox" value="checkone" id="checkboxOne" name="checkone"/><label for="checkboxOne">Remember Me</label>
-                                            </div>
+                    <div class="tab-content slide-effect t-left">
+                        <!-- Tab -->
+                        <div id="modal_tab1" role="tabpanel" class="tab-pane active">
+                            <div class="tab-container">
+                                <!-- Contact Form -->
+                                <form id="login_form_phone" name="login_form_phone" method="post" action="">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-12">
+                                            <!-- Name -->
+                                            <input type="text" name="name-a" id="name-a" required placeholder="Имя" class="classic_form radius bg-gray">
                                         </div>
-                                        <!-- Send Button -->
-                                        <button type="submit" id="submit" class="bg-colored click-effect white extrabold qdr-hover-1 classic_form uppercase radius xxs-mt">Log in</button>
-                                        <!-- End Send Button -->
-                                    </form>
-                                    <!-- End Form -->
-                                </div>
-                            </div>
-                            <!-- Tab -->
-                            <div id="modal_tab2" role="tabpanel" class="tab-pane">
-                                <div class="tab-container">
-                                    <!-- Contact Form -->
-                                    <form id="login_form" name="login_form" method="post" action="">
-                                        <!-- Name -->
-                                        <input type="text" name="name" id="name" required placeholder="Username" class="classic_form radius bg-gray">
-                                        <!-- Email -->
-                                        <input type="password" name="password" id="password" required placeholder="Password" class="classic_form radius bg-gray">
-                                        <!-- Checkboxes -->
-                                        <div class="t-left">
-                                            <div class="classic_checkbox">
-                                                <input type="checkbox" value="checkone" id="checkboxOne" name="checkone"/><label for="checkboxOne">Remember Me</label>
-                                            </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <!-- Email -->
+                                            <input type="tel" name="phone_a" id="phone_a" required placeholder="8 (888) 888 88 88" class="classic_form radius bg-gray">
                                         </div>
-                                        <!-- Send Button -->
-                                        <button type="submit" id="submit" class="bg-colored click-effect white extrabold qdr-hover-1 classic_form uppercase radius xxs-mt">Log in</button>
-                                        <!-- End Send Button -->
-                                    </form>
-                                    <!-- End Form -->
-                                </div>
+                                    </div>
+                                    <div class="t-left xxs-mb">
+                                        <p>Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+                                    </div>
+                                    <div class="t-left">
+                                        <div class="classic_checkbox xxs-mb">
+                                            <input type="checkbox" value="checkone" id="checkboxOne" name="checkone"/><label for="checkboxOne">Я даю согласие на обработку моих первональных данных</label>
+                                        </div>
+                                    </div>
+                                    <!-- Send Button -->
+                                    <div class="t-center">
+                                        <button type="submit" id="submit_phone" class="bold white font-16 bg-colored xl-btn radius qdr-hover-6 slow">Заказать</button>
+                                    </div>
+                                    <!-- End Send Button -->
+                                </form>
+                                <!-- End Form -->
                             </div>
                         </div>
-                    
+                        <!-- Tab -->
+                        <div id="modal_tab2" role="tabpanel" class="tab-pane">
+                            <div class="tab-container">
+                                <!-- Contact Form -->
+                                <form id="login_form_email" name="login_form_email" method="post" action="">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-12">
+                                            <!-- Name -->
+                                            <input type="text" name="name-b" id="name-b" required placeholder="Имя" class="classic_form radius bg-gray">
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <!-- Email -->
+                                            <input type="tel" name="phone_b" id="phone_b" required placeholder="8 (888) 888 88 88" class="classic_form radius bg-gray">
+                                        </div>
+                                    </div>
+                                    <div class="t-left xxs-mb">
+                                        <p>Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+                                    </div>
+                                    <div class="t-left">
+                                        <div class="classic_checkbox xxs-mb">
+                                            <input type="checkbox" value="checktwo" id="checkboxTwo" name="checktwo"/><label for="checkboxTwo">Я даю согласие на обработку моих первональных данных</label>
+                                        </div>
+                                    </div>
+                                    <div class="modal_message">
+                                        <textarea placeholder="Ваш вопрос" name="message" id="message" class="classic_form radius bg-gray"></textarea>
+                                    </div>
+                                    <!-- Send Button -->
+                                    <div class="t-center">
+                                        <button type="submit" id="submit_email" class="bold white font-16 bg-colored xl-btn radius qdr-hover-6 slow">Заказать</button>
+                                    </div>
+                                    <!-- End Send Button -->
+                                </form>
+                                <!-- End Form -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- End Modal Content -->
@@ -1144,7 +1174,7 @@
                                 <input type="email" name="email" id="email" required class="classic_form radius bg-gray">
                             </div>
                         </div>
-                        <div>
+                        <div class="t-left">
                             <p class="xs-mb font-14">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
                             <p class="xs-mb font-14">Отправляя форму, вы соглашаетесь с 
                                 <a href="#">политикой конфиденциальности</a>
@@ -1153,7 +1183,7 @@
                         </div>
 
                         <div class="t-center">
-                            <button type="submit" id="submit" class="bold white font-16 bg-colored xl-btn radius qdr-hover-6 bs-lg-hover slow">Получить проект</button>
+                            <button type="submit" id="submit" class="bold white font-16 bg-colored xl-btn radius bs-lg-hover slow">Получить проект</button>
                         </div>
                     </form>
                     <!-- End Form -->
