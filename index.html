@@ -60,8 +60,8 @@
                 </div>
                 <!-- Logo -->
                 <div class="col-md-4 col-12 t-center mob-head-grid mob-head-t-left">
-                    <a href="tel:+79289999999" class="inline-block underline-hover head-phone">
-                        <i class="fa fa-phone colored1"></i>
+                    <a href="tel:+79289999999" class="inline-block head-phone">
+                        <i class="fa fa-phone colored"></i>
                         <span>8 928 999 99 99</span>
                     </a>
                 </div>
@@ -1010,7 +1010,7 @@
                     <!-- Bottom Note -->
                     <div class="col-sm-6 col-xs-12 table-im t-right height-auto-mobile t-center-xs xxs-mt-mobile">
                         <div class="v-middle">
-                            <a href="#" target="_blank" class="colored-hover underline-hover">Политика конфиденциальности</a>
+                            <a href="#" target="_blank" class="colored-hover">Политика конфиденциальности</a>
                         </div>
                     </div>
                 </div>
@@ -1023,64 +1023,79 @@
     <!-- Modal 5 -->
     <div id="modal-5" class="modal middle-modal fade" tabindex="-1" role="dialog">
         <!-- Container -->
-        <div class="modal-dialog container bg-white radius o-hidden" role="document">
+        <div class="modal-dialog modal-lg bg-white radius o-hidden" role="document">
             <!-- Modal Content -->
             <div class="modal-content">
                 <!-- Close Button for modal -->
                 <div class="close fa fa-close" data-dismiss="modal"></div>
                 <!-- Left, Image area -->
-                <div class="modal-img col-md-5 col-12" data-background="images/blocks/modal_04.jpg"></div>
+                <!-- <div class="modal-img col-md-5 col-12" data-background="images/blocks/modal_04.jpg"></div> -->
                 <!-- Right, Details -->
-                <div class="modal-details col-md-7 offset-md-5 col-12">
+                <div class="modal-details col-md-12 offset-md-12 col-12">
                     <!-- Title -->
-                    <h3 class="extrabold no-pm">Получить бесплатный проект</h3>
+                    <h3 class="no-pm">Получить бесплатный проект</h3>
                     <!-- Contact Form -->
                     <form id="contact_form" name="contact_form" method="post" action="php/mail.php">
                         <!-- Half Inputs -->
                         <div class="row">
-                            <div class="col-md-6 col-xs-12 xs-my">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <!-- Name -->
-                                        <label for="name">Ваше имя:*</label>
-                                        <input type="text" name="name" id="name" required class="classic_form radius bg-gray">
-                                    </div>
-                                    <div class="col-12">
-                                        <!-- Phone -->
-                                        <label for="tel">Телефон:*</label>
-                                        <input type="tel" name="tel" id="tel" required class="classic_form radius bg-gray">
-                                    </div>
-                                    <div class="col-12">
-                                        <!-- Email -->
-                                        <label for="email">E-Mail:*</label>
-                                        <input type="email" name="email" id="email" required class="classic_form radius bg-gray">
-                                    </div>
-                                </div>
+                            <div class="col-md-5 col-12 xs-my modal-box-pic">
+                                <img src="images/gallery/mosaic_06.jpg" alt="pic">
                             </div>
-                            <div class="col-md-6 col-xs-12 xs-my">
-                                <div class="xs-py xs-pl xs-pr bs-sm">
-                                    <input id="range_01">
+                            <div class="col-md-7 col-xs-12 xs-my">
+                                <div class="modal-range-rel">
+                                    <span class="modal-range-a">Длина</span>
+                                    <input id="range_1" class="irs-hidden-input">
+                                    <span class="modal-range-i">мм</span>
                                 </div>
-                                <div class="xs-py xs-pl xs-pr bs-sm">
-                                    <input id="range_012">
+                                <div class="modal-range-rel">
+                                    <span class="modal-range-a">Ширина</span>
+                                    <input id="range_2" class="irs-hidden-input">
+                                    <span class="modal-range-i">мм</span>
                                 </div>
-                                <div class="xs-py xs-pl xs-pr bs-sm">
-                                    <input id="range_013">
+                                <div class="modal-range-rel">
+                                    <span class="modal-range-a">Высота</span>
+                                    <input id="range_3" class="irs-hidden-input">
+                                    <span class="modal-range-i">мм</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="row classic_form-f">
+                            <div class="col-md-3 col-12">
+                                <!-- Name -->
+                                <label for="name">Ваше имя:*</label>
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <input type="text" name="name" id="name" required class="classic_form radius bg-gray">
+                            </div>
+                        </div>
+                        <div class="row classic_form-f">
+                            <div class="col-md-3 col-12">
+                                <!-- Phone -->
+                                <label for="tel">Телефон:*</label>
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <input type="tel" name="tel" id="tel" required class="classic_form radius bg-gray">
+                            </div>
+                        </div>
+                        <div class="row classic_form-f">
+                            <div class="col-md-3 col-12">
+                                <!-- Email -->
+                                <label for="email">E-Mail:*</label>
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <input type="email" name="email" id="email" required class="classic_form radius bg-gray">
+                            </div>
+                        </div>
                         <div>
-                            <p class="xs-mb">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
-                            <p class="xs-mb">Отправляя форму, вы соглашаетесь с 
+                            <p class="xs-mb font-14">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+                            <p class="xs-mb font-14">Отправляя форму, вы соглашаетесь с 
                                 <a href="#">политикой конфиденциальности</a>
                                 сайта
                             </p>
                         </div>
-                        <!-- Half Inputs -->
+
                         <div class="t-center">
-                            <!-- Send Button -->
                             <button type="submit" id="submit" class="bold white font-16 bg-colored xl-btn radius-lg qdr-hover-6 bs-lg-hover slow">Получить проект</button>
-                            <!-- End Send Button -->
                         </div>
                     </form>
                     <!-- End Form -->

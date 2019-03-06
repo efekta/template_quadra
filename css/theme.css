@@ -3216,15 +3216,60 @@
 	.css3-color:hover{color:#3a88d0 !important;}
 	.pagelines-color:hover{color:#4f98df !important;}
 	.gittip-color:hover{color:#7c6035 !important;}
+/*@media (min-width: 576px) {
+	.modal-dialog {
+	    max-width: 600px;
+	    margin: 1.75rem auto;
+	}
+}*/
 .modal a {
 	color: #3e5ee7;
 }
-.modal .modal-details {
-    padding: 40px;
-}
+
 .bold-title {
 	letter-spacing: normal;
 }
+.gray7, .gray7-hover:hover {
+    color: #333 !important;
+}
+/*.modal-dialog-my {
+	min-width: 600px;
+}*/
+
+.modal .modal-details {
+	padding: 40px;
+}
+.modal-range-rel {
+	position: relative;
+}
+.modal-range-i {
+	position: absolute;
+    top: 0;
+    right: 15px;
+    line-height: 52px;
+}
+.modal-range-a {
+	position: absolute;
+    top: 0;
+    left: -15px;
+    line-height: 52px;
+}
+.modal-range-rel > .irs {
+    width: 60%;
+    margin: auto;
+}
+.modal-range-rel > input {
+	width: 0;
+	height: 0;
+}
+.modal-box-pic img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+/*.classic_form-a {
+	width: 70%;
+}*/
 p {
 /*	color: #333;*/
 	font-size: 16px !important;
