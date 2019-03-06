@@ -3222,7 +3222,12 @@
 	    margin: 1.75rem auto;
 	}
 }
-*/.modal-tabs > .modal-tabs-nav {
+*/
+.classic_footer-blue > a.colored, a.colored-hover:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+.modal-tabs > .modal-tabs-nav {
 	position: static;
 	transform: translate(0,0);
 }
