@@ -1577,20 +1577,55 @@ $(window).on('load', function() {
 /*================================
 Карта
 =================================*/
-        ymaps.ready(function(){
+ymaps.ready(init);
+  var myMap;
 
-        var myMap = new ymaps.Map("my_map", {
+  function init(){
+        myMap = new ymaps.Map("my_map", {
             center: [55.515171, 37.568758],
             zoom: 17
         });
-        var myPlacemark = new ymaps.Placemark([55.515171, 37.568758], {}, {
+
+      myMap.controls.remove('searchControl').remove('trafficControl').remove('geolocationControl');
+
+      myMap.behaviors.disable(['drag', 'scrollZoom']);
+
+      myPin = new ymaps.GeoObjectCollection({}, {
         iconLayout: 'default#image',
         iconImageHref: 'icons/placeholder@2x.png',
         iconImageSize: [18, 24]
-    });
-        myMap.geoObjects.add(myPlacemark);
-        myMap.behaviors.disable(['scrollZoom']);
-    });
+      });
+
+      myPlacemark = new ymaps.Placemark([55.515171, 37.568758], {
+        balloonContentHeader: '<img src="../images/logos/logo_01.png" alt="Кликай, не стенсняйся :)" title="Кликай, не стенсняйся :)" class="mc__logo"><span class="mc__home">Двери купэ</span>',
+        balloonContentBody: 'Lorem ipsum dolor sit amet elit.',
+        balloonContentFooter: '<p class="mc__foot">Lorem ipsum dolor sit adipisicing.</p>',
+        hintContent: 'Двери купэ'
+      });
+
+      myPin.add(myPlacemark);
+
+      myMap.geoObjects.add(myPin);
+      myMap.behaviors.disable(['scrollZoom']);
+  }
+
+/*================================
+Карта
+=================================*/
+    //     ymaps.ready(function(){
+
+    //     var myMap = new ymaps.Map("my_map", {
+    //         center: [55.515171, 37.568758],
+    //         zoom: 17
+    //     });
+    //     var myPlacemark = new ymaps.Placemark([55.515171, 37.568758], {}, {
+    //     iconLayout: 'default#image',
+    //     iconImageHref: 'icons/placeholder@2x.png',
+    //     iconImageSize: [18, 24]
+    // });
+    //     myMap.geoObjects.add(myPlacemark);
+    //     myMap.behaviors.disable(['scrollZoom']);
+    // });
     /*========================
      fancy
     =========================*/
