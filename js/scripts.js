@@ -1597,7 +1597,7 @@ ymaps.ready(init);
       });
 
       myPlacemark = new ymaps.Placemark([55.515171, 37.568758], {
-        balloonContentHeader: '<img src="../images/logos/logo_01.png" alt="Кликай, не стенсняйся :)" title="Кликай, не стенсняйся :)" class="mc__logo"><span class="mc__home">Двери купэ</span>',
+        balloonContentHeader: '<img src="images/logos/logo_01.png" alt="Кликай, не стенсняйся :)" title="Кликай, не стенсняйся :)" class="mc__logo"><span class="mc__home">Двери купэ</span>',
         balloonContentBody: 'Lorem ipsum dolor sit amet elit.',
         balloonContentFooter: '<p class="mc__foot">Lorem ipsum dolor sit adipisicing.</p>',
         hintContent: 'Двери купэ'
