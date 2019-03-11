@@ -3397,6 +3397,9 @@ p {
 	.mt-modern-tabs .modern-tabs-container {
 		margin: 0;
 	}
+	.mt-modern-tabs .modern-tabs-container .nav {
+		margin: 0;
+	}
 	.nav-tabs {
 	    display: block;
 /*	    position: absolute;
