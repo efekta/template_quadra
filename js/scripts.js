@@ -1577,37 +1577,37 @@ $(window).on('load', function() {
 /*================================
 Карта
 =================================*/
-ymaps.ready(init);
-  var myMap;
+// ymaps.ready(init);
+//   var myMap;
 
-  function init(){
-        myMap = new ymaps.Map("my_map", {
-            center: [55.515171, 37.568758],
-            zoom: 17
-        });
+//   function init(){
+//         myMap = new ymaps.Map("my_map", {
+//             center: [55.515171, 37.568758],
+//             zoom: 17
+//         });
 
-      myMap.controls.remove('searchControl').remove('trafficControl').remove('geolocationControl');
+//       myMap.controls.remove('searchControl').remove('trafficControl').remove('geolocationControl');
 
-      myMap.behaviors.disable(['drag', 'scrollZoom']);
+//       myMap.behaviors.disable(['drag', 'scrollZoom']);
 
-      myPin = new ymaps.GeoObjectCollection({}, {
-        iconLayout: 'default#image',
-        iconImageHref: 'icons/placeholder@2x.png',
-        iconImageSize: [18, 24]
-      });
+//       myPin = new ymaps.GeoObjectCollection({}, {
+//         iconLayout: 'default#image',
+//         iconImageHref: 'icons/placeholder@2x.png',
+//         iconImageSize: [18, 24]
+//       });
 
-      myPlacemark = new ymaps.Placemark([55.515171, 37.568758], {
-        balloonContentHeader: '<img src="images/logos/logo_01.png" alt="Кликай, не стенсняйся :)" title="Кликай, не стенсняйся :)" class="mc__logo"><span class="mc__home">Двери купэ</span>',
-        balloonContentBody: 'Lorem ipsum dolor sit amet elit.',
-        balloonContentFooter: '<p class="mc__foot">Lorem ipsum dolor sit adipisicing.</p>',
-        hintContent: 'Двери купэ'
-      });
+//       myPlacemark = new ymaps.Placemark([55.515171, 37.568758], {
+//         balloonContentHeader: '<img src="images/logos/logo_01.png" alt="Кликай, не стенсняйся :)" title="Кликай, не стенсняйся :)" class="mc__logo"><span class="mc__home">Двери купэ</span>',
+//         balloonContentBody: 'Lorem ipsum dolor sit amet elit.',
+//         balloonContentFooter: '<p class="mc__foot">Lorem ipsum dolor sit adipisicing.</p>',
+//         hintContent: 'Двери купэ'
+//       });
 
-      myPin.add(myPlacemark);
+//       myPin.add(myPlacemark);
 
-      myMap.geoObjects.add(myPin);
-      myMap.behaviors.disable(['scrollZoom']);
-  }
+//       myMap.geoObjects.add(myPin);
+//       myMap.behaviors.disable(['scrollZoom']);
+//   }
 
 /*================================
 Карта

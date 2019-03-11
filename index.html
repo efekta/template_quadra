@@ -9,8 +9,8 @@
     <meta name="keywords" content="modern, creative, website, html5, bootstrap responsive, parallax, soft, front-end, designer, coming soon, account, portfolio, photographer, grid, social, modules, design, personal, faq, one page, multi-purpose, branding, studio, agency, templates, css3, carousel, slider, corporate, theme, quadra, demos, blog, shop" />
     <meta name="author" content="GoldEyes" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU">
-    </script>
+<!--     <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU">
+    </script> -->
     <!--Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <!-- Apple Touch Icon -->
@@ -113,8 +113,9 @@
 
 
     <!-- CONTENT -->
-    <section id="home" class="py-210 white fullwidth cover" data-background="images/backgrounds/background_11.jpg">
+    <section id="home" class="home py-210 white fullwidth cover" data-background="images/backgrounds/bg-repeatable-lg.jpg">
         <!-- Container -->
+        <div class="bg-mask" data-bgcolor="rgba(30,30,30, 0.5)" style="background-color: rgba(30, 30, 30, 0.5);"></div>
         <div class="container t-center relative">
            <div class="white skrollr" data-0="opacity:1;" data-200="opacity:0;">
             <div class="white_title_wrap">
@@ -937,7 +938,9 @@
         <div class="bg-colored classic_footer-blue">
             <div class="container footer-body">
                 <div class="footer-wrap">
-                    <div class="my_map" id="my_map"></div>
+                    <div class="my_map" id="my_map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A615a1a5ed19f00ea384222210d48625961f236e136da6a3e9ba6b4edff09ff54&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
 
                     <div class="footer-box t-c-mob">
                         <div class="row white clearfix">
