@@ -3600,3 +3600,6 @@ p {
 	-moz-box-sizing: content-box !important;
 	box-sizing: content-box !important;
 }
+.classic_checkbox {
+margin-left: 0;
+}
