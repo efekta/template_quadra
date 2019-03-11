@@ -3390,12 +3390,19 @@ p {
 	#classic-tabs {
 		position: relative;
 	}
+	.modern-tabs-container {
+		display: inline-block;
+		margin: 30px 0 20px 0;
+	}
+	.mt-modern-tabs .modern-tabs-container {
+		margin: 0;
+	}
 	.nav-tabs {
 	    display: block;
-	    position: absolute;
+/*	    position: absolute;
 	    top: -41px;
 	    left: 50%;
-	    transform: translateX(-50%);
+	    transform: translateX(-50%);*/
 	    background: #fff;
 	}
 
@@ -3403,10 +3410,10 @@ p {
 		margin-bottom: 20px;
 	}
 
-	.tabs-sm-py {
+/*	.tabs-sm-py {
 		padding-bottom: 80px !important;
 	}
-
+*/
 
 	.fancy-pic {
 		display: block;
@@ -3567,6 +3574,9 @@ p {
 	    width: 100%;
 	    height: auto;
 	    max-width: 100%;
+	}
+	.modern-tabs-container {
+		display: block;
 	}
 	.modern-tabs-container .nav {
 	    display: block;
