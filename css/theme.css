@@ -3216,6 +3216,7 @@
 	.css3-color:hover{color:#3a88d0 !important;}
 	.pagelines-color:hover{color:#4f98df !important;}
 	.gittip-color:hover{color:#7c6035 !important;}
+
 .home {
 	position: relative;
 }
@@ -3586,4 +3587,16 @@ p {
 		.nav-tabs .nav-link {
 	    width: 100%;
 	}
+	.classic_footer .footer-body {
+		padding: 30px 0;
+	}
+	.classic_footer .footer-body .row {
+		width: auto;
+	}
+}
+*::before,
+*::after {
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;
+	box-sizing: content-box !important;
 }
