@@ -1189,21 +1189,21 @@
 	.classic_checkbox label:after{ content: 'L'; width: 18px; color:white; text-align: center; line-height: 16px; font-weight: 900; transform:rotateY(180deg) rotateZ(-45deg); height: 18px; position: absolute; text-indent: 0; top: 4px; left: 3px; opacity: 0; }
 	.classic_checkbox input[type=checkbox]{ visibility: hidden; }
 	.classic_checkbox input[type=checkbox]:checked + label:after{ opacity: 1; }
-	.classic_checkbox input[type=checkbox]:checked + label, .classic_checkbox:hover label{ border:1px solid #4a90e2; }
-	.classic_checkbox input[type=checkbox]:checked + label{ background:#4a90e2; }
+	.classic_checkbox input[type=checkbox]:checked + label, .classic_checkbox:hover label{ border:1px solid #3e5ee7; }
+	.classic_checkbox input[type=checkbox]:checked + label{ background: #3e5ee7; }
 	.classic_checkbox.radio label{ border-radius:100%; text-indent: 35px; line-height: 25px;}
 	.classic_checkbox input[type=radio]{ visibility: hidden; display: none; }
 	.classic_checkbox input[type=radio]:checked + label:after{ opacity: 1; }
-	.classic_checkbox input[type=radio]:checked + label, .classic_checkbox:hover label{ border:1px solid #4a90e2; }
-	.classic_checkbox input[type=radio]:checked + label{ background:#4a90e2; }
+	.classic_checkbox input[type=radio]:checked + label, .classic_checkbox:hover label{ border:1px solid #3e5ee7; }
+	.classic_checkbox input[type=radio]:checked + label{ background:#3e5ee7; }
 	.classic_checkbox.over{ width: 60px; text-align: center; }
 	.classic_checkbox.over label{ position: relative; }
 	/* Switch Types */
 	input.switch[type=checkbox]{ height: 0; width: 0; visibility: hidden; }
 	input.switch + label{ cursor: pointer; text-indent: -9999px; width: 55px; height: 26px; max-width: 55px; background: transparent; display: inline-block; border-radius: 100px; position: relative; border:1px solid #ccc; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
-	input.switch + label:hover{ border:1px solid #4a90e2; }
+	input.switch + label:hover{ border:1px solid #3e5ee7; }
 	input.switch + label:after{ content: ''; position: absolute; top: 3px; left: 5px; width: 18px; height: 18px; border-radius: 90px; transition: 0.3s; background: #4a90e2; }
-	input.switch:checked + label{ background: #4a90e2; border:1px solid #4a90e2; }
+	input.switch:checked + label{ background: #3e5ee7; border:1px solid #3e5ee7; }
 	input.switch:checked + label:after{ left: calc(100% - 5px); transform: translateX(-100%); background-color:#fff; }
 	label.switch:active:after{ width: 130px; }
 	input.switch.error_warning + label{ border-color: red; }
@@ -3216,13 +3216,9 @@
 	.css3-color:hover{color:#3a88d0 !important;}
 	.pagelines-color:hover{color:#4f98df !important;}
 	.gittip-color:hover{color:#7c6035 !important;}
-/*@media (min-width: 576px) {
-	.modal-dialog {
-	    max-width: 600px;
-	    margin: 1.75rem auto;
-	}
+.cbp .cbp-item {
+	cursor: pointer;
 }
-*/
 .classic_footer-blue > a.colored, a.colored-hover:hover {
     color: #fff !important;
     text-decoration: underline;
@@ -3247,7 +3243,7 @@
 	color: #333 !important;
 }
 .modal-dialog p {
-	font-size: 14px !important;
+	/*font-size: 14px !important;*/
 	color: #333 !important;
 }
 .modal .modal-details {
@@ -3281,11 +3277,8 @@
 	height: auto;
 	max-width: 100%;
 }
-/*.classic_form-a {
-	width: 70%;
-}*/
+
 p {
-/*	color: #333;*/
 	font-size: 16px !important;
 }
 .main-menu__list {
@@ -3432,6 +3425,15 @@ p {
     	flex-direction: column;
     	justify-content: center;
 	}
+@media screen and (max-width: 1171px) and (min-width: 320px) {
+	.classic_footer {
+		background-color: #3e5ee7;
+	}
+	#my_map {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
 
 @media screen and (max-width: 1120px) and (min-width: 320px) {
 	.main-menu__list li {
@@ -3454,7 +3456,7 @@ p {
 	}
 	#my_map {
 		width: 100%;
-		
+		margin-bottom: 30px;
 	}
 	.footer-box {
 	    width: 100%;
@@ -3481,7 +3483,7 @@ p {
 	    transform: translateX(0);
 	}
 	.tabs-sm-py {
-    padding-bottom: 0 !important;
+    	padding: 30px 0 !important;
 	}
 	.fancy-price a {
 		width: auto;
@@ -3493,6 +3495,7 @@ p {
 	.gallery-type-1 .sm-py {
 		padding: 30px 0 !important;
 	}
+
 }
 @media screen and (max-width: 915px) {
 	.modal .modal-lg {
